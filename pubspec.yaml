@@ -1,0 +1,90 @@
+name: kanban_flutter
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  # MobX packages. MobX is a state-management library that makes it simple to connect the reactive
+  # data of your application with the UI.
+  # See the following page: https://pub.dev/packages/mobx
+  mobx: ^2.0.3
+  flutter_mobx: ^2.0.1
+  # Simple direct Service Locator that allows to decouple the interface from a concrete
+  # implementation and to access the concrete implementation from everywhere in your App
+  # See the following page: https://pub.dev/packages/get_it
+  get_it: ^7.2.0
+  # Injectable is a convenient code generator for get_it. Inspired by Angular DI, Guice
+  # DI and inject.dart.
+  # See the following page: https://pub.dev/packages/injectable
+  injectable: ^1.5.0
+  # AutoRoute is a declarative routing solution, where everything needed for navigation is
+  # automatically generated for you.
+  # See the following page: https://pub.dev/packages/auto_route
+  auto_route: ^4.2.1
+  # Plugin for adapting screen and font size
+  # See the following page: https://pub.dev/packages/flutter_screenutil
+  flutter_screenutil: ^5.6.0
+  # Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.17.0
+  to_csv: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # A build system for Dart code generation and modular compilation.
+  # See the following page: https://pub.dev/packages/build_runner
+  build_runner:
+
+  #data
+  hive_generator:
+
+  freezed:
+
+  # Code generator for MobX that adds support for annotating your code with @observable, @computed,
+  # @action and also creating Store classes.
+  # See the following page: https://pub.dev/packages/mobx_codegen
+  mobx_codegen: ^2.0.2
+
+  # Automatically generate code for converting to and from JSON by annotating Dart classes.
+  # See the following page: https://pub.dev/packages/json_serializable
+  json_serializable: ^6.1.4
+
+  # Injectable is a convenient code generator for get_it. Inspired by Angular DI, Guice DI and
+  # inject.dart.
+  # See the following page: https://pub.dev/packages/injectable_generator
+  injectable_generator: ^1.5.2
+
+  # AutoRoute is a declarative routing solution, where everything needed for navigation is
+  # automatically generated for you.
+  # See the following page: https://pub.dev/packages/auto_route_generator
+  auto_route_generator:
+
+#  # retrofit.dart is an dio client generator using source_gen and inspired by Chopper and Retrofit.
+#  # See the following page: https://pub.dev/packages/retrofit_generator
+#  retrofit_generator: '>=4.0.0 <5.0.0'
+
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/
