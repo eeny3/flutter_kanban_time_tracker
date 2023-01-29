@@ -13,6 +13,8 @@ class TaskText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
+      maxLines: 3,
+      overflow: TextOverflow.ellipsis,
       style: TextStyles.textSize13Weight500.copyWith(color: Palette.white),
     );
   }

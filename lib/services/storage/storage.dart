@@ -43,7 +43,9 @@ class Storage {
   }
 
   void loadTaskHistory() {
-    completedTasks = _box.get('history').cast<CompletedTask>();
+    final boxHistory = _box.get('history');
+    completedTasks =
+        boxHistory != null ? _box.get('history').cast<CompletedTask>() : [];
   }
 
   void updateStorage() {
